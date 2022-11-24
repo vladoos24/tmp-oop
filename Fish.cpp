@@ -55,6 +55,18 @@ habitat Fish::getAreal()
 	return areal;
 }
 
+void Fish::OutFish(std::ofstream &file)
+{
+	Out(file);
+}
+void Fish::OutBird(std::ofstream & file)
+{
+	return;
+}
+void Fish::OutAnimal(std::ofstream & file)
+{
+	return;
+}
 void Fish::Out(std::ofstream & file)
 {
 	file << name<<" ";
@@ -78,6 +90,8 @@ void Fish::Out(std::ofstream & file)
 	default:
 		break;
 	}
+
+	file << " age " << age << " name size ";
 	file << nameSize()<<"\n";
 }
 

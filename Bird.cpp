@@ -41,15 +41,42 @@ void Bird::InData(std::ifstream & file)
 void Bird::Out(std::ofstream & file)
 {
 	file << name << " ";
-	if(migratory)
-		file<< "true ";
-	else file << "false ";
-	file << nameSize()<<"\n";
+	if(migratory)		file<< "true.";
+	else file << "false.";
+	file << " age " << age << " name size ";
+
+	file << nameSize() << "\n";
+}
+
+void Bird::setAge(int inAge)
+{
+	age = inAge;
+}
+
+int Bird::getAge()
+{
+	return age;
 }
 
 int Bird::nameSize()
 {
 	return name.length();
 }
+
+void Bird::OutBird(std::ofstream & file)
+{
+	Out(file);
+}
+
+void Bird::OutFish(std::ofstream & file)
+{
+	return;
+}
+
+void Bird::OutAnimal(std::ofstream & file)
+{
+	return;
+}
+
 
 

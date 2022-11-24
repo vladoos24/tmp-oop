@@ -5,9 +5,9 @@
 class Bird : public Container
 {
 private:
-	std::string name;//ï¿½ container
+	std::string name;//â container
 	bool migratory;
-	int age;//ï¿½ container
+	int age;//â container
 public:
 	Bird();
 	~Bird();
@@ -17,6 +17,11 @@ public:
 	bool getMigratory();
 	void InData(std::ifstream &file);
 	void Out(std::ofstream &file);
+	void setAge(int inAge);
+	int getAge();
 	int nameSize();
+	void OutBird(std::ofstream &file);
+	void OutFish(std::ofstream &file);
+	void OutAnimal(std::ofstream &file);
 };
 
