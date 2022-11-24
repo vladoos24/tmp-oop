@@ -1,4 +1,10 @@
 Filled container. 
+Sorted container. 
 Container contents 5 elements.
-0: eagle false 51: salmon Sea 62: pigeon true 63: pike River 44: roughy Lake 6Empty container. 
+0: pike River
+1: eagle false.
+2: salmon Sea
+3: pigeon true.
+4: roughy Lake
+Empty container. 
 Container contents 0 elements.
