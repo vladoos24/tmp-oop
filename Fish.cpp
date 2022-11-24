@@ -62,22 +62,26 @@ void Fish::Out(std::ofstream & file)
 	{
 	case Sea:
 	{
-		file << "Sea";
+		file << "Sea ";
 		break;
 	}
 	case River:
 	{
-		file << "River";
+		file << "River ";
 		break;
 	}
 	case Lake: 
 	{
-		file << "Lake";
+		file << "Lake ";
 		break;
 	}
 	default:
 		break;
 	}
+	file << nameSize()<<"\n";
+}
 
-	file << " age " << age << "\n";
+int Fish::nameSize()
+{
+	return name.length();
 }

@@ -42,19 +42,14 @@ void Bird::Out(std::ofstream & file)
 {
 	file << name << " ";
 	if(migratory)
-		file<< "true.";
-	else file << "false.";
-	file << " age " << age << "\n";
+		file<< "true ";
+	else file << "false ";
+	file << nameSize()<<"\n";
 }
 
-void Bird::setAge(int inAge)
+int Bird::nameSize()
 {
-	age = inAge;
-}
-
-int Bird::getAge()
-{
-	return age;
+	return name.length();
 }
 
 
